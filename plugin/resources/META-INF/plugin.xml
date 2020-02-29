@@ -1,0 +1,31 @@
+<idea-plugin>
+    <id>com.ekwing.toc</id>
+    <name>Toc</name>
+    <version>0.0.1</version>
+    <vendor email="lipeng@moyi365.com" url="http://gitlab.ekwing.com/mird/Android/library/tocPlugin">翼课网</vendor>
+
+    <description><![CDATA[自动生成MarkDown目录]]></description>
+
+    <change-notes><![CDATA[0.1试用版本]]></change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="TocAction" class="com.ekwing.toc.TocAction" text="Toc" description="Generate MD Toc">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+
+</idea-plugin>
